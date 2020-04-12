@@ -1,4 +1,4 @@
-# Context clicker
+# Context Clicker
 
 Designed to be increasingly more attention-getting for every tangent you take from your main task.
 
