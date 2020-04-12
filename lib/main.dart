@@ -83,7 +83,7 @@ class _ContextClickerPageState extends State<ContextClickerPage> {
             child: Container(
               color: _currentColor,
               child: Center(
-                  child: Text("context clicker",
+                  child: Text("snap out of it",
                       style: Theme.of(context)
                           .textTheme
                           .display1
