@@ -1,6 +1,6 @@
 # Context Clicker
 
-<img src="./screenshots/readme_screenshot.png" style="width: 256px;" />
+<img src="./screenshots/readme_screenshot.png" width="20%" />
 
 
 
