@@ -6,6 +6,7 @@ import 'package:audioplayers/audio_cache.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:wakelock/wakelock.dart';
 
 void main() => runApp(ContextClickerApp());
 
@@ -54,6 +55,7 @@ class _ContextClickerPageState extends State<ContextClickerPage> {
 
   initState() {
     super.initState();
+    Wakelock.enable();
     _timer = Timer.periodic(Duration(seconds: 4), (Timer t) => doClicks());
   }
 
@@ -162,6 +164,7 @@ class _ContextClickerPageState extends State<ContextClickerPage> {
   void dispose() {
     _audioPlayer.dispose();
     _timer.cancel();
+    Wakelock.disable();
     super.dispose();
   }
 }
